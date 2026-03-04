@@ -1,6 +1,6 @@
 FROM python:3.12-slim
 
-ARG BIODEEP_DIR=/workspace/BIODEEP
+ARG BIODEEP_DIR=/workspace/biodeep
 ENV PYTHONUNBUFFERED=1
 ENV BIODEEP_DIR=${BIODEEP_DIR}
 
@@ -18,6 +18,8 @@ RUN python -m venv /workspace/cli/.venv \
 COPY AGENTS_BIODEEP.md /root/.deepagents/agent/AGENTS.md
 COPY config.toml /root/.deepagents/config.toml
 COPY skills/ /root/.deepagents/agent/skills/
+## potential skills
+
 COPY cli_cp/ /workspace/cli/
 COPY .gitignore /workspace/cli/deepagents_cli/.gitignore
 

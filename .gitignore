@@ -6,6 +6,7 @@ __pycache__/
 # Virtual environments
 .venv
 deepagents/
+skills_bkp/
 
 # C extensions
 *.so

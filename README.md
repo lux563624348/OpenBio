@@ -2,6 +2,15 @@
 
 ## Skills
 
+Skills are sourced from BioClaw. The following skills are sourced from claude-scientific-skills:
+- Bioinformatics & Genomics
+- Sequence Analysis: Process DNA/RNA/protein sequences with BioPython and pysam
+- Single-Cell Analysis: Analyze 10X Genomics data with Scanpy, identify cell types, infer GRNs with Arboreto
+- Variant Annotation: Annotate VCF files with Ensembl VEP, query ClinVar for pathogenicity
+- Variant Database Management: Build scalable VCF databases with TileDB-VCF for incremental sample addition, efficient population-scale queries, and compressed storage of genomic variant data
+- Gene Discovery: Query NCBI Gene, UniProt, and Ensembl for comprehensive gene information
+- Network Analysis: Identify protein-protein interactions via STRING, map to pathways (KEGG, Reactome)
+
 | Skill | Description |
 | --- | --- |
 | [bio-orchestrator](skills/bio-orchestrator/SKILL.md) | Meta-agent that routes bioinformatics requests to specialised sub-skills. Handles file type detection, analysis planning, report generation, and reproducibility export. |
