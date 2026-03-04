@@ -1,5 +1,20 @@
 # BioDeepagents CLI
 
+## PyPI Package
+
+The `BioDeep` package ships the bioinformatics skill bundle so you can manage and distribute skills via PyPI.
+
+Install from PyPI:
+
+```bash
+python3 -m pip install BioDeep
+```
+
+The package includes:
+- The `biodeep` Python package
+- Bundled bioinformatics skills under `biodeep/skills`
+- A console entry point: `deepagents`
+
 ## Skills
 
 Skills are sourced from BioClaw. The following skills are sourced from claude-scientific-skills:
