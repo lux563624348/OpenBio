@@ -3,13 +3,13 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "OpenBio"
+name = "OpenBioSkill"
 version = "0.1.0"
 description = "OpenBio CLI and skill bundles."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 license = { file = "LICENSE" }
-authors = [{ name = "BioDeep" }]
+authors = [{ name = "Xiang Li" }]
 keywords = ["bioinformatics", "cli", "skills"]
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -20,14 +20,14 @@ classifiers = [
 ]
 
 [project.scripts]
-deepagents = "biodeep.cli:main"
+deepagents = "OpenBio.cli:main"
 
 [tool.setuptools]
 include-package-data = true
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["OpenBio*"]
+include = ["OpenBioSkill*"]
 
 [tool.setuptools.package-data]
 OpenBio = ["skills/**"]

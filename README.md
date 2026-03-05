@@ -1,15 +1,15 @@
 # BioDeepagents CLI
 
-[![PyPI](https://img.shields.io/pypi/v/OpenBio?label=OpenBio&logo=pypi&logoColor=white)](https://pypi.org/project/OpenBio/)
+[![PyPI](https://img.shields.io/pypi/v/openbioskill?label=openbioskill&logo=pypi&logoColor=white)](https://pypi.org/project/openbioskill/)
 
 ## PyPI Package
 
-The `OpenBio` package ships the bioinformatics skill bundle so you can manage and distribute skills via PyPI.
+The `openbioskill` package ships the bioinformatics skill bundle so you can manage and distribute skills via PyPI.
 
 Install from PyPI:
 
 ```bash
-python3 -m pip install OpenBio
+python3 -m pip install openbioskill
 ```
 
 The package includes:
