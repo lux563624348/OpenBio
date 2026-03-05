@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "BioDeep"
+name = "OpenBio"
 version = "0.1.0"
-description = "BioDeepagents CLI and skill bundles."
+description = "OpenBio CLI and skill bundles."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { file = "LICENSE" }
@@ -27,7 +27,7 @@ include-package-data = true
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["biodeep*"]
+include = ["OpenBio*"]
 
 [tool.setuptools.package-data]
-biodeep = ["skills/**"]
+OpenBio = ["skills/**"]

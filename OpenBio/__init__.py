@@ -1,4 +1,4 @@
-"""BioDeep package."""
+"""OpenBio package."""
 
 __all__ = ["__version__"]
 

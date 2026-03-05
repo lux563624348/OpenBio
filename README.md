@@ -1,20 +1,20 @@
 # BioDeepagents CLI
 
-[![PyPI](https://img.shields.io/pypi/v/BioDeep?label=BioDeep&logo=pypi&logoColor=white)](https://pypi.org/project/BioDeep/)
+[![PyPI](https://img.shields.io/pypi/v/OpenBio?label=OpenBio&logo=pypi&logoColor=white)](https://pypi.org/project/OpenBio/)
 
 ## PyPI Package
 
-The `BioDeep` package ships the bioinformatics skill bundle so you can manage and distribute skills via PyPI.
+The `OpenBio` package ships the bioinformatics skill bundle so you can manage and distribute skills via PyPI.
 
 Install from PyPI:
 
 ```bash
-python3 -m pip install BioDeep
+python3 -m pip install OpenBio
 ```
 
 The package includes:
-- The `biodeep` Python package
-- Bundled bioinformatics skills under `biodeep/skills`
+- The `OpenBio` Python package
+- Bundled bioinformatics skills under `OpenBio/skills`
 - A console entry point: `deepagents`
 
 ## Skills
