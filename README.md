@@ -1,17 +1,24 @@
 # OpenBio
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+[![Skills](https://img.shields.io/badge/Skills-150-brightgreen.svg)](#whats-included)
+[![Databases](https://img.shields.io/badge/Databases-200%2B-orange.svg)](#whats-included)
+[![Agent Skills](https://img.shields.io/badge/Standard-Agent_Skills-blueviolet.svg)](https://agentskills.io/)
+[![Works with](https://img.shields.io/badge/Works_with-Deepagents_|_Claude_Code_|_Codex_|Gemini-blue.svg)](#getting-started)
+[![PyPI](https://img.shields.io/pypi/v/openbioskill?label=openbioskill&logo=pypi&logoColor=white)](https://pypi.org/project/openbioskill/)
 ![OpenBio Infrastructure](infra.png)
 
-OpenBio is a bioinformatics-focused skill distribution project built on top of `deepagents-cli`.
+OpenBio is a bioinformatics-focused skill distribution project built on top of [`deepagents-cli`](https://github.com/langchain-ai/deepagents). Recommend use docker image to use directly.
 
 The default model is:
-1. Use `deepagents-cli` as the execution/runtime layer.
+
+1. Use [`deepagents-cli`](https://github.com/langchain-ai/deepagents) as the execution/runtime layer.
 2. Ship verified OpenBioSkills as a PyPI package (`openbioskill`).
 3. Install those skills into agent skill directories with `openbio install`.
 
 ## Architecture
 
-- `deepagents-cli`: terminal agent runtime, tools, and orchestration.
+- [`deepagents-cli`](https://github.com/langchain-ai/deepagents): terminal agent runtime, tools, and orchestration.
 - `openbioskill` (PyPI): packaging and installer for OpenBio skill bundles.
 - `skills/`: verified bioinformatics and scientific skill database (`SKILL.md`, references, scripts, assets).
 
@@ -40,12 +47,12 @@ OpenBio/
 └── infra.png                    # conceptual platform diagram
 ```
 
-## Default Build: deepagents-cli + Verified OpenBioSkills (PyPI)
+## Default Build: [deepagents-cli](https://github.com/langchain-ai/deepagents) + Verified OpenBioSkills (PyPI)
 
-### 1) Runtime layer (deepagents-cli)
+### 1) Runtime layer ([deepagents-cli](https://github.com/langchain-ai/deepagents))
 
 This repository extends the deepagents runtime:
-- Base install in Docker: `deepagents` + `deepagents-cli`
+- Base install in Docker: `deepagents` + [`deepagents-cli`](https://github.com/langchain-ai/deepagents)
 - Optional local runtime if you already use deepagents-compatible agents
 
 ### 2) Distribution layer (PyPI package)
