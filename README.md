@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-![OpenBio](src/images/OpenBio.png)
+
+<img src="src/images/OpenBio.png" alt="OpenBio" width="80%"/>
 # OpenBio CLI
->>>>>>> e75035752c2a6d6039d369379fb324b9fe7d048f
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 [![Skills](https://img.shields.io/badge/Skills-150-brightgreen.svg)](#whats-included)
