@@ -1,5 +1,3 @@
-
-<img src="src/images/OpenBio.png" alt="OpenBio" width="80%"/>
 # OpenBio CLI
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
@@ -8,6 +6,7 @@
 [![Agent Skills](https://img.shields.io/badge/Standard-Agent_Skills-blueviolet.svg)](https://agentskills.io/)
 [![Works with](https://img.shields.io/badge/Works_with-Deepagents_|_Claude_Code_|_Codex_|Gemini-blue.svg)](#getting-started)
 [![PyPI](https://img.shields.io/pypi/v/openbioskill?label=openbioskill&logo=pypi&logoColor=white)](https://pypi.org/project/openbioskill/)
+<img src="src/images/OpenBio.png" alt="OpenBio" width="80%"/>
 ![OpenBio Infrastructure](infra.png)
 
 OpenBio is a bioinformatics-focused skill distribution project built on top of [`deepagents-cli`](https://github.com/langchain-ai/deepagents). Recommend use docker image to use directly.
