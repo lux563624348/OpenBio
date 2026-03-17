@@ -1,3 +1,4 @@
+![OpenBio](src/images/OpenBio.png)
 # BioDeepagents CLI
 
 [![PyPI](https://img.shields.io/pypi/v/openbioskill?label=openbioskill&logo=pypi&logoColor=white)](https://pypi.org/project/openbioskill/)
