@@ -3,8 +3,8 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "OpenBioSkill"
-version = "0.1.0"
+name = "openbioskill"
+version = "0.1.1"
 description = "OpenBio CLI and skill bundles."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -20,14 +20,17 @@ classifiers = [
 ]
 
 [project.scripts]
-deepagents = "OpenBio.cli:main"
+openbio = "openbioskill.cli:main"
 
 [tool.setuptools]
 include-package-data = true
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["OpenBioSkill*"]
+include = ["openbioskill*", "skills"]
 
 [tool.setuptools.package-data]
-OpenBio = ["skills/**"]
+skills = ["**/*"]
+
+[tool.setuptools.exclude-package-data]
+skills = ["**/__pycache__/*", "**/*.pyc", "**/*.pyo"]
