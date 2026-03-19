@@ -1,0 +1,797 @@
+{
+  "file name" : "vbaf048.pdf",
+  "number of pages" : 4,
+  "author" : "[Christine Hou,Shila Ghazanfar,Federico Marini,Martin Morgan,Stephanie C Hicks]",
+  "title" : "HuBMAPR: an R client for the HuBMAP data portal",
+  "creation date" : "D:20250409081855+05'30'",
+  "modification date" : "D:20250813194538+00'00'",
+  "kids" : [ {
+    "type" : "paragraph",
+    "id" : 30,
+    "page number" : 1,
+    "bounding box" : [ 56.409, 724.188, 215.753, 764.449 ],
+    "font" : "UniversLTStd-Cn",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Bioinformatics Advances, 2025, 00, vbaf048 https://doi.org/10.1093/bioadv/vbaf048 Advance Access Publication Date: 10 March 2025 Application Note"
+  }, {
+    "type" : "paragraph",
+    "id" : 5,
+    "page number" : 1,
+    "bounding box" : [ 56.409, 664.765, 159.994, 684.515 ],
+    "font" : "UniversLTStd-Cn",
+    "font size" : 15.94,
+    "text color" : "[0.0]",
+    "content" : "Gene regulation"
+  }, {
+    "type" : "heading",
+    "id" : 6,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 56.409, 634.389, 469.497, 655.693 ],
+    "heading level" : 1,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 17.933,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "HuBMAPR: an R client for the HuBMAP data portal"
+  }, {
+    "type" : "heading",
+    "id" : 7,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 56.409, 600.53, 467.419, 629.907 ],
+    "heading level" : 2,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 10.959,
+    "text color" : "[0.0]",
+    "content" : "Christine Hou1 , Shila Ghazanfar2,3,4 , Federico Marini5,6 , Martin Morgan7, , Stephanie C. Hicks1,8,9,10,"
+  }, {
+    "type" : "paragraph",
+    "id" : 13,
+    "page number" : 1,
+    "bounding box" : [ 56.409, 584.813, 476.344, 596.991 ],
+    "font" : "UniversLTStd-Cn",
+    "font size" : 8.966,
+    "text color" : "[0.0]",
+    "content" : "1Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, 21205, United States"
+  }, {
+    "type" : "list",
+    "id" : 14,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 56.409, 544.958, 495.999, 587.013 ],
+    "numbering style" : "arabic numbers",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 56.409, 574.892, 420.088, 587.013 ],
+      "font" : "UniversLTStd-Cn",
+      "font size" : 8.966,
+      "text color" : "[0.0]",
+      "content" : "2School of Mathematics and Statistics, The University of Sydney, Camperdown, NSW, 2006, Australia",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 56.409, 544.958, 495.999, 577.035 ],
+      "font" : "UniversLTStd-Cn",
+      "font size" : 8.966,
+      "text color" : "[0.0]",
+      "content" : "3Sydney Precision Data Science Centre, The University of Sydney, Camperdown, NSW, 2006, Australia 4Charles Perkins Centre, The University of Sydney, Camperdown, NSW, 2006, Australia 5Institute of Medical Biostatistics, Epidemiology and Informatics, University Medical Center Mainz, Mainz, 55118, Germany",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "list",
+    "id" : 15,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 56.409, 495.182, 452.647, 547.158 ],
+    "numbering style" : "arabic numbers",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 56.409, 535.037, 417.82, 547.158 ],
+      "font" : "UniversLTStd-Cn",
+      "font size" : 8.966,
+      "text color" : "[0.0]",
+      "content" : "6Research Center for Immunotherapy (FZI), University Medical Center Mainz, Mainz, 55131, Germany",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 56.409, 495.182, 452.647, 537.18 ],
+      "font" : "UniversLTStd-Cn",
+      "font size" : 8.966,
+      "text color" : "[0.0]",
+      "content" : "7Roswell Park Comprehensive Cancer Center, Buffalo, NY, 14203, United States 8Department of Biomedical Engineering, Johns Hopkins University, Baltimore, MD, 21218, United States 9Center for Computational Biology, Johns Hopkins University, Baltimore, MD, 21218, United States 10Malone Center for Engineering in Healthcare, Johns Hopkins University, Baltimore, MD, 21218, United States",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 16,
+    "page number" : 1,
+    "bounding box" : [ 56.409, 454.102, 541.401, 493.457 ],
+    "font" : "UniversLTStd-Cn",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Corresponding authors. Stephanie C. Hicks, Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health, 615 N Wolfe St, Baltimore, MD, 21205, United States. E-mail: shicks19@jhu.edu; Martin Morgan, Roswell Park Comprehensive Cancer Center, Buffalo, NY, 14203, United States. E-mail: martin.morgan@roswellpark.org. Associate Editor: Lina Ma"
+  }, {
+    "type" : "heading",
+    "id" : 17,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 56.409, 437.163, 96.818, 448.999 ],
+    "heading level" : 3,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 9.963,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "Abstract"
+  }, {
+    "type" : "paragraph",
+    "id" : 18,
+    "page number" : 1,
+    "bounding box" : [ 56.409, 396.332, 560.987, 432.88 ],
+    "font" : "UniversLTStd-Light",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Summary: The Human BioMolecular Atlas Program (HuBMAP) constructs the worldwide available platform to research the human body at the cellular level. The HuBMAP Data Portal encompasses a wide range of data resources measured on emerging experimental technologies at a spatial resolution. To broaden access to the HuBMAP Data Portal, we introduce an R client called HuBMAPR available on Bioconductor. This provides an efficient and programmatic interface that enables researchers to discover and retrieve HuBMAP data more easily and quickly."
+  }, {
+    "type" : "paragraph",
+    "id" : 19,
+    "page number" : 1,
+    "bounding box" : [ 56.409, 384.37, 428.941, 393.989 ],
+    "font" : "UniversLTStd-Light",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Availability and implementation: HuBMAPR is available at https://bioconductor.org/packages/HuBMAPR."
+  }, {
+    "type" : "heading",
+    "id" : 20,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 56.409, 347.395, 129.791, 360.415 ],
+    "heading level" : 2,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 10.959,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "1 Introduction"
+  }, {
+    "type" : "paragraph",
+    "id" : 21,
+    "page number" : 1,
+    "bounding box" : [ 56.409, 151.084, 299.715, 344.389 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "The Human BioMolecular Atlas Program (HuBMAP), sponsored by the Common Fund at the National Institutes of Health, is dedicated to developing an open framework to map the human body at a single-cell resolution (HuBMAP Consortium, 2019). The HuBMAP Consortium comprises various research groups that are increasingly developing and using advanced computational tools to study the interaction, spatial organization, and specialization of trillions of cells within the adult human body. These efforts aim to understand how cellular structures contribute to organ and tissue function and how these processes relate to overall human health. HuBMAP supports this effort by hosting comprehensive data on the HuBMAP Data Portal (Jain et al., 2023). Authorized contributors can upload their experimental data to the portal by adhering to the data submission guidelines (HuBMAP, 2025), thus expanding the shared resources available for scientific discovery."
+  }, {
+    "type" : "paragraph",
+    "id" : 22,
+    "page number" : 1,
+    "bounding box" : [ 56.409, 83.157, 299.708, 151.237 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "HuBMAP data generally encompass five primary entity categories: (i) dataset, (ii) donor, (iii) sample, (iv) collection, and (v) publication. As of February 2025, more than 3000 datasets are available across 20 assay types (HuBMAP 2025), including Co-detection by indexing (Goltsev et al. 2018), Imaging Mass Cytometry (Chevrier et al. 2017, Chevrier"
+  }, {
+    "type" : "paragraph",
+    "id" : 23,
+    "page number" : 1,
+    "bounding box" : [ 317.706, 204.942, 560.982, 360.499 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "et al. 2018, Rapsomaniki et al. 2018, Schulz et al. 2018), single-cell RNA Sequencing (Svensson et al. 2017), and Sequential Fluorescence In-Situ Hybridization (Eng et al., 2019) (Supplementary Fig. S1), from more than 250 donors and more than 2300 samples across 31 different organs. HuBMAP datasets generated from related experiments (or sharing similar characteristics) are grouped into 18 HuBMAP collections. Despite these data resources being available on the HuBMAP Data Portal, currently, there is no programmatic interface in R (R Core Team 2024) to access, explore, retrieve and download these data. In this work, we address the problem by developing HuBMAPR Package R/ Bioconductor (Gentleman et al. 2004) to allow researchers to explore and download HuBMAP data programmatically."
+  }, {
+    "type" : "heading",
+    "id" : 24,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 317.707, 175.446, 502.853, 188.466 ],
+    "heading level" : 2,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 10.959,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "2 HuBMAPR R/bioconductor package"
+  }, {
+    "type" : "paragraph",
+    "id" : 25,
+    "page number" : 1,
+    "bounding box" : [ 317.707, 162.655, 553.552, 174.581 ],
+    "font" : "UniversLTStd",
+    "font size" : 9.963,
+    "text color" : "[0.0]",
+    "content" : "2.1 Overview of HuBMAP data portal and HuBMAPR"
+  }, {
+    "type" : "paragraph",
+    "id" : 26,
+    "page number" : 1,
+    "bounding box" : [ 317.707, 82.963, 560.983, 160.94 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "The HuBMAP Consortium offers several APIs (Jain et al. 2023) to ensure programmatic access to its components. The HuBMAPR package specifically integrates three APIs: Search API (Elastic 2025), Entity API, and Ontology API (Fig. 1A). Each API serves a distinct purpose with unique query capabilities, tailored to meet various needs. Using the packages httr2 (Wickham 2024) and rjsoncons (Morgan et al."
+  }, {
+    "type" : "paragraph",
+    "id" : 28,
+    "page number" : 1,
+    "bounding box" : [ 56.409, 29.024, 550.654, 66.998 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.472,
+    "text color" : "[0.0]",
+    "content" : "Received: October 9, 2024; Revised: February 12, 2025; Editorial Decision: February 14, 2025; Accepted: March 5, 2025 © The Author(s) 2025. Published by Oxford University Press. This is an Open Access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited."
+  }, {
+    "type" : "paragraph",
+    "id" : 32,
+    "level" : "2",
+    "page number" : 1,
+    "bounding box" : [ 588.135, 173.78, 597.072, 618.22 ],
+    "font" : "ArialMT",
+    "font size" : 8.0,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Downloaded from https://academic.oup.com/bioinformaticsadvances/article/5/1/vbaf048/8068805 by guest on 13 August 2025"
+  }, {
+    "type" : "header",
+    "id" : 33,
+    "page number" : 2,
+    "bounding box" : [ 51.024, 755.76, 555.604, 765.476 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 3,
+      "page number" : 2,
+      "bounding box" : [ 51.024, 755.76, 555.604, 765.476 ],
+      "heading level" : 5,
+      "font" : "UniversLTStd-Obl",
+      "font size" : 7.97,
+      "text color" : "[0.0, 0.0, 0.0, 1.0]",
+      "content" : "2 Hou et al."
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 41,
+    "page number" : 2,
+    "bounding box" : [ 98.135, 548.107, 508.535, 738.142 ],
+    "source" : "vbaf048_images/imageFile1.png"
+  }, {
+    "type" : "caption",
+    "id" : 42,
+    "page number" : 2,
+    "bounding box" : [ 51.024, 530.762, 548.479, 539.781 ],
+    "linked content id" : 41,
+    "font" : "UniversLTStd-Light",
+    "font size" : 7.472,
+    "text color" : "[0.0]",
+    "content" : "Figure 1. HuBMAPR builds a programmatic interface between the HuBMAP data portal (HuBMAP 2025) and the R programming language (R Core Team"
+  }, {
+    "type" : "paragraph",
+    "id" : 43,
+    "level" : "3",
+    "page number" : 2,
+    "bounding box" : [ 51.024, 512.848, 540.554, 530.823 ],
+    "font" : "UniversLTStd-Light",
+    "font size" : 7.472,
+    "text color" : "[0.0]",
+    "content" : "2024) utilizing multiple APIs based on (A) a query language (HuBMAP Consortium 2019) and (B) extracting specific data entry based primarily on Universally Unique Identifiers (UUIDs). (C) Within R, the HuBMAPR package helps to explore and retrieve data from different entity categories. (D) The"
+  }, {
+    "type" : "paragraph",
+    "id" : 44,
+    "page number" : 2,
+    "bounding box" : [ 51.024, 494.696, 547.049, 512.852 ],
+    "font" : "UniversLTStd-Light",
+    "font size" : 7.472,
+    "text color" : "[0.0]",
+    "content" : "HuBMAPR package provides an additional reference for organ abbreviation and corresponding full name. (E) Data files can be accessed and downloaded via Globus (Globus 2010), NCBI Database of Genotypes and Phenotypes (dbGAP) (Tryka et al. 2014) or Sequence Read Archive (SRA) (Katz et al. 2022)."
+  }, {
+    "type" : "paragraph",
+    "id" : 34,
+    "level" : "3",
+    "page number" : 2,
+    "bounding box" : [ 51.024, 370.996, 294.33, 481.246 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "2024) packages, HuBMAPR effectively manages, modifies and executes multiple requests via these APIs, presenting responses in formats such as tibble or character. These outputs are further modified for clarity in the final results of the HuBMAPR functions. The Search API primarily searches for relevant data information and is referred to the Elasticsearch API (Jain et al. 2023). The Entity API is specifically utilized in the bulk_data_transfer() function for Globus URL retrieval, while the Ontology API is applied in the organ() function."
+  }, {
+    "type" : "paragraph",
+    "id" : 35,
+    "page number" : 2,
+    "bounding box" : [ 51.024, 249.787, 294.324, 371.093 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "Using temporary storage to cache API responses facilitates efficient data retrieval by reducing the need for redundant requests to the HuBMAP Data Portal. This approach minimizes server load, improves response times (e.g. datasets () takes <4s to retrieve more than 3500 datasets’ information), and enhances query efficiency. Periodically clearing cached data or directing it to a temporary directory ensures that the retrieved information remains relevant while managing storage effectively. This caching mechanism supports a smoother user experience when accessing data from the portal."
+  }, {
+    "type" : "paragraph",
+    "id" : 36,
+    "page number" : 2,
+    "bounding box" : [ 51.024, 40.42, 294.33, 249.941 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "The HuBMAPR package retrieves data from the same five entity categories in HuBMAP using three different identifiers: (i) HuBMAP ID, (ii) Universally Unique Identifier (UUID), and (iii) Digital Object Identifiers. The HuBMAPR package primarily uses the UUID—a 32-digit hexadecimal numberand the more human-readable HuBMAP ID (Fig. 1B). Considering precision and compatibility with software implementation and data storage, the UUID serves as the primary identifier to retrieve data across various functions, with the UUID uniquely mapping to its corresponding HuBMAP ID. A systematic nomenclature is adopted for functions in the package by appending the entity category prefix to the concise description of the specific functionality. For example, dataset_detail() helps to retrieve the detailed metadata of one specific dataset, and donor_derived() provides the derived datasets of specific donors. Most of the functions are grouped by entity categories, simplifying the process of selecting the appropriate functions to retrieve the desired information associated with a UUID from the specific entity category."
+  }, {
+    "type" : "paragraph",
+    "id" : 37,
+    "page number" : 2,
+    "bounding box" : [ 312.32, 448.098, 555.604, 481.246 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "The structure of these functions is consistent across all entity categories, with some minor exceptions for collection and publication entities."
+  }, {
+    "type" : "paragraph",
+    "id" : 38,
+    "page number" : 2,
+    "bounding box" : [ 312.321, 428.035, 391.507, 439.961 ],
+    "font" : "UniversLTStd",
+    "font size" : 9.963,
+    "text color" : "[0.0]",
+    "content" : "2.2 Data retrieval"
+  }, {
+    "type" : "paragraph",
+    "id" : 39,
+    "page number" : 2,
+    "bounding box" : [ 312.321, 161.629, 555.607, 426.367 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "The HuBMAPR package arranges HuBMAP data of each entity category chronologically by the last modification date, providing extensive physical, social, or ethnic demographic characteristics of the donor, including biological sex at birth, age, self-reported race, organ, body mass index, and other metadata. In addition, other features include experimental statistics such as analyte class, processing pipeline, sample category, affiliation information (e.g. contributor contacts, attribution group name, registration institution), and status updates such as publication date, publication status, and last modification date (HuBMAP Consortium, 2019). By carefully selecting and presenting these data details from the HuBMAP Data Portal, the HuBMAPR package offers a robust R-based interface for comprehensive data discovery, filtering, and extraction from datasets, samples, and donors (Fig. 1C); the package generates detailed textual descriptions, contributor lists, and links to related datasets for collections and publications, facilitating deeper insights into these resources (Fig. 1E). Furthermore, it serves as a reference tool for users seeking to identify organs associated with HuBMAP datasets, providing both organ abbreviations and their corresponding full names (Fig. 1C). This functionality enables users to efficiently filter and identify datasets relevant to specific organs, streamlining data exploration."
+  }, {
+    "type" : "paragraph",
+    "id" : 40,
+    "page number" : 2,
+    "bounding box" : [ 312.321, 40.42, 555.611, 161.783 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "The HuBMAPR package facilitates the retrieval of the data provenance, including ancestors and descendants. The HuBMAP Data Portal defines an ancestor record as an individual record from which a specific donor, sample, or dataset is derived. In contrast, a descendant record is defined as an individual record derived from other preceding records. The donor initiates the provenance hierarchy, with the donor and the donor-derived sample organ considered foundational elements. Specific sample categories, such as section, suspension, and block, can be derived from the sample organ. Various assay types are applied to generate HuBMAP"
+  }, {
+    "type" : "heading",
+    "id" : 45,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 588.135, 173.78, 597.072, 618.22 ],
+    "heading level" : 4,
+    "font" : "ArialMT",
+    "font size" : 8.0,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Downloaded from https://academic.oup.com/bioinformaticsadvances/article/5/1/vbaf048/8068805 by guest on 13 August 2025"
+  }, {
+    "type" : "paragraph",
+    "id" : 62,
+    "page number" : 3,
+    "bounding box" : [ 55.843, 755.935, 560.357, 765.404 ],
+    "font" : "CourierStd",
+    "font size" : 7.97,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "HuBMAPR 3"
+  }, {
+    "type" : "paragraph",
+    "id" : 46,
+    "page number" : 3,
+    "bounding box" : [ 56.409, 640.457, 299.711, 740.616 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "datasets from the samples. The provenance hierarchy culminates in the supporting dataset, particularly when the dataset is further processed by specific pipelines such as snapATAC (Fang et al. 2021), Salmon (Patro et al. 2017), or Cytokit (Czech et al. 2019). Corresponding functions can retrieve ancestor and descendant records for the donor, sample, and dataset. Due to the definition of the collection and publication entity, there is no function to retrieve ancestors and descendants."
+  }, {
+    "type" : "paragraph",
+    "id" : 47,
+    "page number" : 3,
+    "bounding box" : [ 56.409, 620.394, 134.489, 632.32 ],
+    "font" : "UniversLTStd",
+    "font size" : 9.963,
+    "text color" : "[0.0]",
+    "content" : "2.3 Files delivery"
+  }, {
+    "type" : "paragraph",
+    "id" : 48,
+    "page number" : 3,
+    "bounding box" : [ 56.409, 496.344, 299.708, 618.67 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "The HuBMAP Data Portal offers access to open and restricted access to individual record files, adhering to the NIH Genomics Data Sharing Policy and other relevant legal frameworks. Public HuBMAP data can be accessed through Globus (2010), a secure and efficient cloud platform for large data storage and rapid file transfers (Fig. 1D). Using the unique dataset UUID, the HuBMAPR package connects to the HuBMAP public collection within the Globus research data management system, directing users to the Globus online website to preview and download raw data products, downstream analysis reports, metadata files, and visualizations."
+  }, {
+    "type" : "paragraph",
+    "id" : 49,
+    "page number" : 3,
+    "bounding box" : [ 56.409, 240.547, 299.717, 496.441 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "The inability to programmatically discover, navigate, and transfer data files is a known limitation of HuBMAPR. We initially aimed to develop additional functions for the HuBMAPR package to enable users to transfer data files and directories locally and programmatically, avoiding manually navigating a browser, selecting files individually, and downloading them. However, these additional transfer functions introduced technical complexities without improving transfer speed or programmatic efficiency. To improve user accessibility, we proposed the experimental R package rglobus (Morgan 2024) as an alternative programmatic tool for data transfer. rglobus operates as a standalone R client, allowing users to discover and navigate collections and transfer files and directories across any Globus data folder. While rglobus is entirely independent of the HuBMAPR package and not specifically designed for the HuBMAP Data Portal, it can achieve the goal of transferring data files locally and programmatically, providing a versatile solution for users. Using HuBMAP data as the main example, the rglobus package documentation (Morgan 2024) included in the Supplementary Documents provides a detailed end-to-end pipeline to illustrate how the rglobus package operates on data transfer from Globus."
+  }, {
+    "type" : "paragraph",
+    "id" : 50,
+    "page number" : 3,
+    "bounding box" : [ 56.409, 40.421, 299.713, 240.701 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "Restricted-access databases contain human-protected sequencing data that require special permissions. The NIH Data Access Committee manages access to restricted databases, and users must authenticate their identities to request downloads. Except for members of the HuBMAP Consortium, access to restricted-access databases can be granted through the Database of Genotypes and Phenotypes (dbGaP) (Tryka et al. 2014) or the Sequence Read Archive (SRA) (Katz et al. 2022), if available. However, the accessibility of restricted datasets depends on the availability of the dbGaP and SRA links or the sensitivity of the data. The bulk_data_transfer() function in the HuBMAPR package notifies users of the restricted status and provides appropriate feedback. If dbGaP and/or SRA links are available, the function generates error messages indicating restricted access and includes links to dbGaP and/ or SRA. Users can copy and paste these links into a web browser, where additional instructions on these platforms guide them through the process of requesting permissions to"
+  }, {
+    "type" : "paragraph",
+    "id" : 51,
+    "page number" : 3,
+    "bounding box" : [ 317.706, 672.204, 560.97, 740.616 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "access and download protected data files. In contrast, if neither the dbGaP nor the SRA links are available, suggesting that the data may contain highly sensitive information, the function generates a concise error message to inform users of the difficulty and the additional time and effort required to make these datasets accessible."
+  }, {
+    "type" : "heading",
+    "id" : 52,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 317.707, 640.158, 384.393, 653.178 ],
+    "heading level" : 2,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 10.959,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "3 Conclusion"
+  }, {
+    "type" : "paragraph",
+    "id" : 53,
+    "page number" : 3,
+    "bounding box" : [ 317.707, 385.453, 560.996, 637.151 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "The HuBMAPR package serves as a robust tool for integrating and accessing comprehensive information from the HuBMAP Data Portal, effectively bridging the gap between the portal’s data and the specific needs of researchers. By providing a convenient and streamlined interface, the package allows users to explore data aligned with their research objectives. Researchers can filter various entity categories based on given conditions, such as age, BMI, gender, last modification date, and dataset type (e.g. sequencing data, image-based data, or experiment-processed data) that enable the identification of records with similar features or within approximate ranges. Once specific records are pinpointed, the functions allow retrieval of detailed information using UUIDs, including metadata, ancestors, and descendants. The package provides users with information on how to access or download data, indicating whether it is open-access or restricted. For restricted datasets, it guides users to relevant platforms such as dbGaP or SRA for requesting permissions. This functionality positions HuBMAPR as a faster and more efficient client for accessing data, offering extensive support, and facilitating complex research endeavors by providing related information critical for advanced scientific analysis."
+  }, {
+    "type" : "heading",
+    "id" : 54,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 317.707, 353.405, 426.955, 366.425 ],
+    "heading level" : 2,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 10.959,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "Author contributions"
+  }, {
+    "type" : "paragraph",
+    "id" : 55,
+    "page number" : 3,
+    "bounding box" : [ 317.707, 259.084, 560.994, 350.399 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "Christine Hou (Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data Curation, Writing, Visualization), Martin Morgan (Conceptualization, Software, Code Review), Federico Marini (Conceptualization, Code Review), Shila Ghazanfar (Code Review), and Stephanie C. Hicks (Conceptualization, Resources, Writing Review & Editing, Supervision, Project administration, Funding acquisition). All co-authors approved the final manuscript"
+  }, {
+    "type" : "heading",
+    "id" : 56,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 317.707, 227.036, 423.963, 240.056 ],
+    "heading level" : 2,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 10.959,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "Supplementary data"
+  }, {
+    "type" : "paragraph",
+    "id" : 57,
+    "page number" : 3,
+    "bounding box" : [ 317.707, 201.484, 560.989, 224.039 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "Supplementary data are available at Bioinformatics Advances online."
+  }, {
+    "type" : "heading",
+    "id" : 58,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 317.707, 169.436, 413.916, 182.456 ],
+    "heading level" : 2,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 10.959,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "Conflict of interest"
+  }, {
+    "type" : "paragraph",
+    "id" : 59,
+    "page number" : 3,
+    "bounding box" : [ 317.707, 155.335, 377.866, 166.43 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "None declared."
+  }, {
+    "type" : "heading",
+    "id" : 60,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 317.707, 123.288, 360.327, 136.308 ],
+    "heading level" : 2,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 10.959,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "Funding"
+  }, {
+    "type" : "paragraph",
+    "id" : 61,
+    "page number" : 3,
+    "bounding box" : [ 317.707, 40.419, 560.984, 120.282 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "This work was supported by the National Institute of Arthritis and Musculoskeletal and Skin Diseases [U54AR081774 to C.H. and S.C.H.]; the National Human Genome Research Institute [U24HG004059 to M.M.]; and Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) [Projektnummer 318346496—SFB1292/2 TP19N to F.M.]."
+  }, {
+    "type" : "paragraph",
+    "id" : 63,
+    "page number" : 3,
+    "bounding box" : [ 588.135, 173.78, 597.072, 618.22 ],
+    "font" : "ArialMT",
+    "font size" : 8.0,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Downloaded from https://academic.oup.com/bioinformaticsadvances/article/5/1/vbaf048/8068805 by guest on 13 August 2025"
+  }, {
+    "type" : "header",
+    "id" : 64,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 755.76, 555.604, 765.476 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 4,
+      "page number" : 4,
+      "bounding box" : [ 51.024, 755.76, 555.604, 765.476 ],
+      "heading level" : 5,
+      "font" : "UniversLTStd-Obl",
+      "font size" : 7.97,
+      "text color" : "[0.0, 0.0, 0.0, 1.0]",
+      "content" : "4 Hou et al."
+    } ]
+  }, {
+    "type" : "heading",
+    "id" : 65,
+    "level" : "Subtitle",
+    "page number" : 4,
+    "bounding box" : [ 51.024, 728.825, 157.004, 741.845 ],
+    "heading level" : 2,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 10.959,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "Data and availability"
+  }, {
+    "type" : "paragraph",
+    "id" : 66,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 638.02, 294.327, 725.819 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 9.215,
+    "text color" : "[0.0]",
+    "content" : "All published data are available on the HuBMAP Data Portal (HuBMAP 2025). The open-source software package HuBMAPR is based on the R programming language (R Core Team 2024), and the software license that we use is Artistic 2.0 (The Perl Foundation 2000–2006). This package is available in Bioconductor (at least version 3.20, https://bioconduc tor.org/packages/HuBMAPR) depending on R (at least version 4.4.0)."
+  }, {
+    "type" : "heading",
+    "id" : 67,
+    "level" : "Subtitle",
+    "page number" : 4,
+    "bounding box" : [ 51.024, 606.992, 108.273, 620.012 ],
+    "heading level" : 2,
+    "font" : "UniversLTStd-Bold",
+    "font size" : 10.959,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "References"
+  }, {
+    "type" : "paragraph",
+    "id" : 68,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 572.482, 294.324, 602.042 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Chevrier S, Crowell HL, Zanotelli VRT et al. Compensation of signal spillover in suspension and imaging mass cytometry. Cell Syst 2018; 6:612–20.e5."
+  }, {
+    "type" : "paragraph",
+    "id" : 69,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 552.575, 294.285, 572.108 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Chevrier S, Levine JH, Zanotelli SKSD et al. An immune atlas of clear cell renal cell carcinoma. Cell 2017;169:736–49.e18."
+  }, {
+    "type" : "paragraph",
+    "id" : 70,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 522.642, 294.307, 552.21 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Czech E, Aksoy BA, Aksoy P et al. Cytokit: a single-cell analysis toolkit for high dimensional fluorescent microscopy imaging. BMC Bioinformatics 2019;20:448."
+  }, {
+    "type" : "paragraph",
+    "id" : 71,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 512.721, 294.282, 522.333 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Eng CHL, Lawson M, Zhu Q et al. Transcriptome-scale super-resolved"
+  }, {
+    "type" : "paragraph",
+    "id" : 72,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 482.844, 294.29, 512.355 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "imaging in tissues by RNA seqFISH. Nature 2019;568:235–9. Elastic. Elastic. 2025. https://www.elastic.co. Fang R, Preissl S, Li Y et al. Comprehensive analysis of single cell"
+  }, {
+    "type" : "paragraph",
+    "id" : 73,
+    "page number" : 4,
+    "bounding box" : [ 62.985, 472.866, 277.617, 482.478 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "ATAC-seq data with snapATAC. Nat Commun 2021;12:1337."
+  }, {
+    "type" : "paragraph",
+    "id" : 74,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 442.989, 294.305, 472.5 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Gentleman RC, Carey VJ, Bates DM et al. Bioconductor: open software development for computational biology and bioinformatics. Genome Biol 2004;5:R80."
+  }, {
+    "type" : "paragraph",
+    "id" : 75,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 423.041, 294.276, 442.623 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "Globus. Globus. 2010. https://www.globus.org (12 February 2025, date last accessed)."
+  }, {
+    "type" : "paragraph",
+    "id" : 76,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 393.165, 294.313, 422.668 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Goltsev Y, Samusik N, Kennedy-Darling J et al. Deep profiling of mouse splenic architecture with CODEX multiplexed imaging. Cell 2018; 174:968–81.e15."
+  }, {
+    "type" : "paragraph",
+    "id" : 77,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 373.266, 294.28, 392.791 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "HuBMAP. Human BioMolecular Atals Program. 2025. https://hubmap consortium.org/ (12 February 2025, date last accessed)."
+  }, {
+    "type" : "paragraph",
+    "id" : 78,
+    "page number" : 4,
+    "bounding box" : [ 312.319, 689.883, 555.593, 740.476 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "HuBMAP Consortium. The human body at cellular resolution: the NIH Human Biomolecular Atlas Program. Nature 2019;574:187–92. Jain S, Pei L, Spraggins JM et al.; HuBMAP Consortium. Advances and prospects for the Human BioMolecular Atlas Program (HuBMAP). Nat Cell Biol 2023;25:1089–100."
+  }, {
+    "type" : "paragraph",
+    "id" : 79,
+    "page number" : 4,
+    "bounding box" : [ 312.319, 659.221, 555.571, 689.518 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Katz K, Shutov O, Lapoint R et al. The Sequence Read Archive: a decade more of explosive growth. Nucleic Acids Res 2022; 50:D387–D90."
+  }, {
+    "type" : "paragraph",
+    "id" : 80,
+    "page number" : 4,
+    "bounding box" : [ 312.319, 628.55, 555.604, 658.847 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Morgan M. rglobus: Manage ‘Globus’ Collection and File Transfer Services. R package version 0.0.1.9000. 2024. https://mtmorgan. github.io/rglobus/ (24 January 2025, date last accessed)."
+  }, {
+    "type" : "paragraph",
+    "id" : 81,
+    "page number" : 4,
+    "bounding box" : [ 312.319, 587.895, 555.602, 628.177 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Morgan M. rjsoncons: Query, Pivot, Patch, and Validate ‘JSON’ and ‘NDJSON’. R package version 1.3.1. 2024. https://CRAN.R-proj ect.org/package=rjsoncons (24 January 2025, date last accessed). Patro R, Duggal G, Love MI et al. Salmon provides fast and bias-aware"
+  }, {
+    "type" : "paragraph",
+    "id" : 82,
+    "page number" : 4,
+    "bounding box" : [ 324.281, 577.577, 553.904, 587.189 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "quantification of transcript expression. Nat Methods 2017;14:417–9."
+  }, {
+    "type" : "paragraph",
+    "id" : 83,
+    "page number" : 4,
+    "bounding box" : [ 312.319, 536.54, 555.571, 577.211 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "R Core Team. R: A Language and Environment for Statistical Computing. Vienna, Austria: R Foundation for Statistical Computing. 2024. https://www.R-project.org/ (24 January 2025, date last accessed)."
+  }, {
+    "type" : "paragraph",
+    "id" : 84,
+    "page number" : 4,
+    "bounding box" : [ 312.319, 505.861, 555.598, 536.166 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Rapsomaniki MA, Lun XK, Woerner S et al. CellCycleTRACER accounts for cell cycle and volume in mass cytometry data. Nat Commun 2018;9:632."
+  }, {
+    "type" : "paragraph",
+    "id" : 85,
+    "page number" : 4,
+    "bounding box" : [ 312.319, 475.19, 555.601, 505.495 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Schulz D, Zanotelli VRT, Fischer JR et al. Simultaneous multiplexed imaging of mRNA and proteins with subcellular resolution in breast cancer tissue samples by mass cytometry. Cell Syst 2018;6:25–36.e5."
+  }, {
+    "type" : "paragraph",
+    "id" : 86,
+    "page number" : 4,
+    "bounding box" : [ 312.319, 454.895, 555.56, 474.825 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Svensson V, Natarajan KN, Ly LH et al. Power analysis of single-cell RNA-sequencing experiments. Nat Methods 2017;14:381–7."
+  }, {
+    "type" : "paragraph",
+    "id" : 87,
+    "page number" : 4,
+    "bounding box" : [ 312.319, 424.232, 555.592, 454.529 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0, 0.0, 1.0]",
+    "content" : "The Perl Foundation. Artistic License 2.0. 2000–2006. https://www. perlfoundation.org/artistic-license-20.html (24 January 2025, date last accessed)."
+  }, {
+    "type" : "paragraph",
+    "id" : 88,
+    "page number" : 4,
+    "bounding box" : [ 312.319, 403.928, 555.564, 423.858 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Tryka KA, Hao L, Sturcke A et al. NCBI’s Database of Genotypes and Phenotypes: dbGaP. Nucleic Acids Res 2014;42:D975–D9."
+  }, {
+    "type" : "paragraph",
+    "id" : 89,
+    "page number" : 4,
+    "bounding box" : [ 312.319, 373.266, 555.571, 403.562 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 7.97,
+    "text color" : "[0.0]",
+    "content" : "Wickham H. httr2: Perform HTTP Requests and Process the Responses. 2024. https://httr2.r-lib.org. R package version 1.0.3, https://github.com/r-lib/httr2 (24 January 2025, date last accessed)."
+  }, {
+    "type" : "paragraph",
+    "id" : 91,
+    "page number" : 4,
+    "bounding box" : [ 588.135, 173.78, 597.072, 618.22 ],
+    "font" : "ArialMT",
+    "font size" : 8.0,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Downloaded from https://academic.oup.com/bioinformaticsadvances/article/5/1/vbaf048/8068805 by guest on 13 August 2025"
+  }, {
+    "type" : "paragraph",
+    "id" : 90,
+    "page number" : 4,
+    "bounding box" : [ 51.024, 40.931, 546.128, 95.925 ],
+    "font" : "SabonLTPro-Roman",
+    "font size" : 6.974,
+    "text color" : "[0.0]",
+    "content" : "© The Author(s) 2025. Published by Oxford University Press. This is an Open Access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited. Bioinformatics Advances, 2025, 00, 1–4 https://doi.org/10.1093/bioadv/vbaf048 Application Note"
+  } ]
+}

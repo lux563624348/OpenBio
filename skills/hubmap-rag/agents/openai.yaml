@@ -1,4 +1,4 @@
 interface:
   display_name: "HuBMAP RAG"
-  short_description: "RAG over HuBMAP PDFs via FAISS search"
-  default_prompt: "Use $hubmap-rag to index and search HuBMAP PDFs with FAISS and OpenAI embeddings."
+  short_description: "RAG over HuBMAP PDFs using opendataloader-pdf (no FAISS)"
+  default_prompt: "Use $hubmap-rag to retrieve grounded passages from skills/hubmap-rag/parsed (refresh from skills/hubmap-rag/pdfs with opendataloader-pdf when needed) without FAISS."

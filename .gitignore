@@ -222,3 +222,6 @@ __marimo__/
 build/
 dist/
 auth.json
+skills/hubmap-rag/pdfs/*
+.gitignore
+skills/hubmap-rag/parsed/*/*.png

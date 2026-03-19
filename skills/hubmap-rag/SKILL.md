@@ -1,25 +1,33 @@
 ---
 name: hubmap-rag
-description: RAG over HuBMAP-related PDFs using the local FAISS index and OpenAI embeddings. Use for questions that mention HuBMAP docs, policies, or data, or when you need to index/search PDFs stored in `servers/pdfs` via the `update_index` and `search_pdfs` MCP tools.
+description: RAG over HuBMAP-related PDFs using local file-based retrieval (no FAISS) with the opendataloader-pdf parser. Use for questions that mention HuBMAP docs, policies, or data, and ground answers in parsed documents under `skills/hubmap-rag/parsed`.
 ---
 
 # HuBMAP RAG
 
 ## Overview
 
-Index and search HuBMAP PDFs with a local FAISS vector store to support RAG-style answers, grounded in `servers/pdfs` content.
+Search HuBMAP PDFs with lightweight local retrieval to support RAG-style answers, grounded in parsed content under `skills/hubmap-rag/parsed`.
 
 ## Workflow
 
-1. Confirm prerequisites. PDFs are stored in `servers/pdfs`, `OPENAI_API_KEY` is available for embeddings, and the MCP server running `servers/pdf_server.py` is available so tools can be called.
-2. Ensure the index is ready. Call `update_index` once if the index is missing or PDFs changed. The FAISS index is stored at `servers/pdfs/pdf_index`.
-3. Retrieve passages. Call `search_pdfs` with the user's query and optional `k` (default `3`). Use the returned `pdf`, `page`, and `excerpt` fields to ground the answer.
-4. Respond with RAG-style output. Cite which PDF and page each excerpt came from. If results are empty or irrelevant, ask for a narrower query or confirm the PDFs are present.
+1. Confirm prerequisites. Source PDFs are in `skills/hubmap-rag/pdfs`, parsed files are in `skills/hubmap-rag/parsed`, and the parser from https://github.com/opendataloader-project/opendataloader-pdf is installed and available.
+2. Refresh parsed files only when PDFs changed:
+   - Run `opendataloader-pdf skills/hubmap-rag/pdfs -o skills/hubmap-rag/parsed -f json,text,markdown`.
+3. Build query terms from the user question. Include synonyms and key entities (for example: "data access", "DUA", "consent", "tissue", "metadata").
+4. Retrieve candidate passages from parsed files (no vector index):
+   - Use fast local search (for example `rg -n`) across `skills/hubmap-rag/parsed/*.txt` or `*.md`.
+   - Pull the best matching snippets and nearby context windows.
+5. Rank and filter snippets for relevance. Prefer passages that match multiple key terms and explicit policy/process language.
+6. Respond with RAG-style output. Cite the original PDF filename and page number when available. If retrieval is weak or empty, ask for a narrower query or suggest specific document names.
 
-## Tool Notes
+## Retrieval Notes
 
-- `update_index()` scans `servers/pdfs` and builds/updates the FAISS index.
-- `search_pdfs(query: str, k: int = 3)` returns a list of dicts with `pdf`, `page`, and `excerpt`.
+- No FAISS index is required for this skill.
+- Default source PDF path: `skills/hubmap-rag/pdfs`.
+- Default retrieval path: `skills/hubmap-rag/parsed`.
+- Default parser: https://github.com/opendataloader-project/opendataloader-pdf
+- Prefer reproducible local retrieval (parse -> search -> cite) so answers stay auditable.
 
 ## Example Triggers
 
