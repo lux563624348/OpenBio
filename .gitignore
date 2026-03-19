@@ -6,7 +6,7 @@ __pycache__/
 # Virtual environments
 .venv
 deepagents/
-OpenBio/
+
 
 # unverified skills
 skills_unverified/
@@ -221,3 +221,4 @@ __marimo__/
 *.egg-info/
 build/
 dist/
+auth.json
